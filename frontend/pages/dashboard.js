@@ -8,7 +8,10 @@ export default function Dashboard() {
   const [data, setData] = useState(null);
 
   const load = async () => {
-    const res = await axios.get("http://localhost:4000/dashboard?month=" + month);
+ const res = await axios.get(
+  "https://wedogood-assignment.onrender.com/dashboard?month=" + month
+);
+
     setData(res.data);
   };
 
