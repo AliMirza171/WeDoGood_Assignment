@@ -10,7 +10,10 @@ export default function Upload() {
     const file = e.target.files[0];
     const formData = new FormData();
     formData.append("file", file);
-    const res = await axios.post("http://localhost:4000/reports/upload", formData);
+    const res = await axios.post(
+  "https://wedogood-assignment.onrender.com/reports/upload",
+  formData
+);
     setJob(res.data.job_id);
   };
 
