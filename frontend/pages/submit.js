@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Submit() {
   const [form, setForm] = useState({});
   const submit = async () => {
-    await axios.post("http://localhost:4000/report", form);
+    await axios.post("https://wedogood-assignment.onrender.com", form);
     alert("Report submitted");
   };
 
