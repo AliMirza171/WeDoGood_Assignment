@@ -1,13 +1,11 @@
-"use client";
-
 import { Container, Typography, Button, Stack } from "@mui/material";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const router = useRouter();
 
   return (
-    <Container sx={{ mt: 10 }}>
+    <Container sx={{ mt: { xs: 4, md: 10 } }}>
       <Typography variant="h4" gutterBottom>
         NGO Reporting Dashboard
       </Typography>
